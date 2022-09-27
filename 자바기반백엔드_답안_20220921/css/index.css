@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+}
+
+.left-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60px;
+
+    background-color: #c4c4c4;
+}
+
+.aside-button {
+    margin: 10px 0px;
+
+    border-radius: 10px;
+
+    width: 40px;
+    height: 40px;
+}
+
+.aside-button:nth-child(1) {
+    color: #fff;
+    background: rgb(99, 238, 190);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 393px;
+
+    overflow: hidden;
+}
+
+.main-img {
+    width: 100%;
+} 
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 1px solid #999494;
+    border-bottom: 1px solid #999494;
+
+    height: 60px;
+}
+
+.menu-button {
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+table {
+    width: 900px;
+}
+
+tbody th {
+    padding: 5px 20px;
+}
+
+tbody td {
+    padding: 5px;
+}
+
+tbody th {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+}
+
+tbody input, textarea, select {
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+tbody textarea {
+    height: 174px;
+
+    resize: none;
+}
+
+tfoot td {
+    text-align: right;
+}
+
+tfoot button {
+    border-radius: 10px;
+
+    width: 150px;
+    height: 60px;
+
+    color: white;
+    background-color: #1A8FDD;
+}
+

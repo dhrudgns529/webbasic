@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type="checkbox"]{
+      display: none;
+    }
+    input[type="checkbox"] + label {
+      display: inline-block;
+
+      border: 2px solid #dbdbdb;
+      border-radius: 50%;
+
+      width: 20px;
+      height: 20px;
+
+      position: relative;
+    }
+    
+    input[type="checkbox"]:checked + label::after { /* 체크가 되어졌을때 */
+      content: "✔";
+      
+      font-size: 15px;
+      text-align: center;
+      
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #dbdbdb;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="ch1">
+  <label for="ch1"></label>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+      height: 100%;
+
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    tfoot tr td {
+      text-align: center;
+    }
+    
+    table {
+      border-collapse: collapse;
+      border: 1px solid #141414;
+
+      width: 400px;
+    }
+
+    th, td {
+      border-collapse: collapse;
+      border: 1px solid #141414;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">회원가입</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>아이디</th>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td><input type="email"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <button type="button">가입하기</button>
+            <button type="button">로그인</button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

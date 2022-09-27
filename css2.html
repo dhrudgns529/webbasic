@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main-box1 {
+      width: 400px;
+      height: 200px;
+      position: relative;
+      background-color: #f30000;
+    }
+    .main-box2 {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      background-color: beige;
+    }
+    .box1 {
+      position: absolute; /* 상위 relavtive 포지션을 기준 */
+      top: 10px;
+      right: 200px;
+
+      width: 50px;
+      height: 50px;
+      background-color: #75d819;
+    }
+    .box2 {
+      width: 50px;
+      height: 50px;
+
+      background-color: aqua;
+    }
+    </style>
+
+</head>
+<body>
+  <div class="main-box1"></div>
+  <div class="main-box2">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container">
+        <div class="left-aside">
+            <button type="button" class="aside-button"><i class="fa-solid fa-house"></i></button>
+            <button type="button" class="aside-button"><i class="fa-solid fa-mug-hot"></i></button>
+            <button type="button" class="aside-button"><i class="fa-regular fa-image"></i></button>
+            <button type="button" class="aside-button"><i class="fa-brands fa-youtube"></i></button>
+            <button type="button" class="aside-button"><i class="fa-solid fa-headset"></i></button>
+        </div>
+        <div class="main-container">
+            <div class="header">
+                <div class="header-img">
+                    <img class="main-img" src="images/main-img.jpg" alt="메인 이미지">
+                </div>
+                <div class="header-nav">
+                    <button type="button" class="menu-button">HOME</button>
+                    <button type="button" class="menu-button">COFFEE</button>
+                    <button type="button" class="menu-button">CF</button>
+                    <button type="button" class="menu-button">PRINT</button>
+                    <button type="button" class="menu-button">문의하기</button>
+                </div>
+            </div>
+            <div class="main">
+                <form action="#">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="5">
+                                    <h1>제품 문의하기</h1>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><label for="title">제목</label></th>
+                                <td colspan="3"><input type="text" id="title" name="title" required></td>
+                            </tr>
+                            <tr>
+                                <th><label for="writer">작성자</label></th>
+                                <td colspan="3"><input type="text" id="writer" name="writer" required></td>
+                            </tr>
+                            <tr>
+                                <th><label for="email">답변받을 이메일</label></th>
+                                <td>
+                                    <input type="text" id="email" name="email" required>
+                                    
+                                </td>
+                                <td>@</td>
+                                <td>
+                                    <select name="domain" required>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="kakao.com">kakao.com</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.com">hanmail.com</option>
+                                    </select> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="content">문의내용</label></th>
+                                <td colspan="3"><textarea name="content" id="content" required></textarea></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <button type="submit">문의하기</button>
+                                </td>
+                                <td colspan="3">
+                                    <button type="reset">초기화</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

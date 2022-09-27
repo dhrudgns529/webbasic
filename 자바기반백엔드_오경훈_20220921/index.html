@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function func() {
+    let title = document.getElementById('title').value;
+    let user = document.getElementById('user').value;
+    let e_mail = document.getElementById('e_mail').value;
+    let txt = document.getElementById('txt').value;
+	  if (title == "" || user == "" || e_mail == "" || txt == ""){
+		alert('빈칸 없이 작성해주세요.');
+	  }
+  }
+</script>
+<body>
+  <div id="container">
+    <div class="left-aside">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-mug-hot"></i>
+      <i class="fa-regular fa-image"></i>
+      <i class="fa-solid fa-tv"></i>
+      <i class="fa-solid fa-headphones"></i>
+    </div>
+    <div class="main-container">
+      <div class="header">
+        <div class="img"></div>
+        <div class="nav">
+          <button type="button">HOME</button>
+          <button type="button">COFFEE</button>
+          <button type="button">CF</button>
+          <button type="button">PRINT</button>
+          <button type="button">문의하기</button>
+        </div>
+        <hr style="font-size: 1px; color:b4b4b4;">
+      </div>
+      <div class="main">
+        <form action="">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">제품 문의하기</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><label for="title">제목</label></th>
+              <td><input type="text" id="title"></td>
+            </tr>
+            <tr>
+              <th><label for="user">작성자</label></th>
+              <td><input type="text" id="user"></td>
+            </tr>
+            <tr>
+              <th><label for="e_mail">답변받을 이메일</label></th>
+              <td style="font-size: 24px; display: flex;"><input type="text" id="e_mail">@<select name="mail">
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="naver.com">naver.com</option>
+                </select></td>
+            </tr>
+            <tr>
+              <th style="vertical-align: top;"><label for="txt">문의내용</label></th>
+              <td><textarea cols="" rows="6" id="txt"></textarea></td>
+            </tr>
+          <tfoot>
+            <tr>
+              <th style="text-align: center;"><input class="bt" type="submit" onclick="func()" value="문의하기"></th>
+              <td style="text-align: right;"><input class="bt" type="reset" value="초기화"></td>
+            </tr>
+          </tfoot>
+          </tbody>
+        </table>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
